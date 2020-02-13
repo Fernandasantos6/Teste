@@ -1,0 +1,51 @@
+body, /* retirou as configurações padrão da pág */
+ul, 
+li
+p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: arial;
+}
+a {
+    text-decoration: none;
+    color: white; /*colocou a cor do texto branco*/
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.header{
+    background: black;
+    display: flex; /* para informar o uso do flex, colocando os itens um ao lado do outro*/
+    flex-wrap: wrap; /* para paginas bem pequenas alinhar os grupos*/
+    justify-content: space-between; /* para colocar um espaço entre eles*/
+    padding: 20px; /* para colocar uma margem de ambos os lados*/
+    align-items: center; /* para alinhar ao centro*/
+}
+.menu{
+    display: flex; /* colocou os itens ao lado do outro*/ 
+}
+.menu li{ /* menu li pq seleciona a lista */
+    margin-left: 10px; /*colocou espaço entre eles, para a esquerda*/
+}
+.menu li a{ /* aqui está selecionando os "links" */
+    display:block; 
+    padding: 10px; /* aumenta a area de seleção do mouse */
+    /* background: tomato; para enxergar o aumento de seleção*/
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
